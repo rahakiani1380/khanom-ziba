@@ -1,0 +1,7 @@
+# never upload these to GitHub: they contain customer data / secrets
+data/db.json
+public/uploads/
+.env
+node_modules/
+*.log
+.DS_Store

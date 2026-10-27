@@ -1,0 +1,13 @@
+# Render.com "Blueprint": deploys the whole site (Node.js server) for free from your GitHub repo.
+services:
+  - type: web
+    name: khanom-ziba
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: ADMIN_USER
+        value: admin
+      - key: ADMIN_PASS        # a strong random password is created for you; see it in the Render dashboard > Environment
+        generateValue: true

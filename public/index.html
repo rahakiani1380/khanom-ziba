@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--SEO_HEAD-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Tailwind Play CDN: fine for development. For production build Tailwind with its CLI. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { brand: '#0f8b8d', paper: '#faf9f6' }, fontFamily: { sans: ['Vazirmatn', 'system-ui', 'sans-serif'] } } } }</script>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-paper text-slate-800 font-sans leading-7 min-h-screen flex flex-col">
+  <!--SEO_BODY_TOP-->
+  <div id="ann" class="bg-brand text-white"></div>
+  <header class="sticky top-0 z-10 bg-white border-b">
+    <div class="max-w-6xl mx-auto px-4 py-2 flex flex-wrap items-center gap-3">
+      <a href="#/" class="text-2xl font-extrabold text-brand">خانوم زیبا</a>
+      <form id="sf" class="flex flex-1 min-w-[200px]">
+        <input id="sq" class="flex-1 min-w-0 border rounded-s-xl px-3 py-2 bg-paper" aria-label="search">
+        <button class="bg-brand text-white px-4 rounded-e-xl" aria-label="search">🔍</button>
+      </form>
+      <button id="lang" class="border rounded-full px-3 py-1"></button>
+      <a id="userLink" href="#/login" class="border rounded-full px-3 py-1"></a>
+      <a href="#/bag" class="border rounded-full px-3 py-1">🛍 <span id="cnt" class="bg-red-600 text-white rounded-full px-2 text-xs">0</span></a>
+    </div>
+    <nav id="menu" class="max-w-6xl mx-auto px-4 flex gap-6 border-t relative"></nav>
+  </header>
+  <main id="app" class="w-full max-w-6xl mx-auto px-4 py-6 flex-1"><!--SEO_BODY--></main>
+  <footer id="foot" class="mt-10"></footer>
+  <div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 bg-slate-800 text-white px-5 py-2 rounded-full opacity-0 transition pointer-events-none z-20"></div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
