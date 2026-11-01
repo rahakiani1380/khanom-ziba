@@ -1,0 +1,10 @@
+{
+  "name": "khanom-ziba",
+  "version": "1.0.0",
+  "description": "خانوم زیبا - medical online shop (Node.js built-ins + Tailwind + jQuery, no npm install needed)",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "license": "UNLICENSED",
+  "private": true
+}

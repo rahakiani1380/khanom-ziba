@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Admin – خانوم زیبا</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { brand: '#6d49e8', paper: '#faf7ff' }, fontFamily: { sans: ['Vazirmatn', 'system-ui', 'sans-serif'] } } } }</script>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    .post { line-height: 2 } .post h2 { font-size: 1.4rem; font-weight: 800; margin: 1.6rem 0 .5rem; color: #4b3f8a } .post h3 { font-size: 1.15rem; font-weight: 700; margin: 1.2rem 0 .4rem }
+    .post p { margin: .7rem 0 } .post ul, .post ol { margin: .7rem 0; padding-inline-start: 1.5rem } .post ul { list-style: disc } .post ol { list-style: decimal }
+    .post img { max-width: 100%; border-radius: 1rem; margin: 1rem auto; display: block } .post a { color: #6d49e8; text-decoration: underline }
+    .post blockquote { border-inline-start: 4px solid #c4b2ff; background: #f4efff; padding: .5rem 1rem; border-radius: .75rem; margin: 1rem 0 }
+  </style>
+</head>
+<body class="bg-paper text-slate-800 font-sans leading-7">
+  <div id="root"></div>
+  <div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 bg-slate-800 text-white px-5 py-2 rounded-full opacity-0 transition pointer-events-none z-20"></div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="/js/admin.js"></script>
+</body>
+</html>

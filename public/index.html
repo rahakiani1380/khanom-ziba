@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6d49e8">
+  <!--SEO_HEAD-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Tailwind Play CDN: fine for development. For production build Tailwind with its CLI. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: {
+    colors: { brand: '#6d49e8', paper: '#fbf8ff',
+      lav: { 50: '#f8f5ff', 100: '#efe9ff', 200: '#ddd2ff', 300: '#c4b2ff', 400: '#a68aff', 500: '#8b6cff', 600: '#6d49e8' },
+      peach: { 50: '#fff7f1', 100: '#ffeadb', 200: '#ffd6bf', 300: '#ffbc98', 400: '#ff9d73' } },
+    fontFamily: { sans: ['Vazirmatn', 'system-ui', 'sans-serif'] } } } }</script>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth }
+    body { color: #2d2a4a; background: #fbf8ff }
+    /* soft lavender + peach glow behind the whole site */
+    body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; background:
+      radial-gradient(620px 420px at 6% 0%, #e4d9ff 0, transparent 62%), radial-gradient(560px 420px at 96% 6%, #ffe0cd 0, transparent 62%),
+      radial-gradient(720px 520px at 50% 105%, #f0e6ff 0, transparent 62%), #fbf8ff }
+    ::selection { background: #d9ccff }
+    :focus-visible { outline: 3px solid #a68aff; outline-offset: 2px }
+    /* frosted glass */
+    .glass { background: rgba(255,255,255,.62); -webkit-backdrop-filter: blur(16px) saturate(1.5); backdrop-filter: blur(16px) saturate(1.5); border: 1px solid rgba(255,255,255,.9); box-shadow: 0 14px 34px -18px rgba(109,73,232,.38) }
+    .glass-strong { background: rgba(255,255,255,.84); -webkit-backdrop-filter: blur(20px) saturate(1.6); backdrop-filter: blur(20px) saturate(1.6); border: 1px solid rgba(255,255,255,.95); box-shadow: 0 18px 44px -16px rgba(109,73,232,.45) }
+    .logo { background: linear-gradient(90deg, #6d49e8 25%, #ff8a65); -webkit-background-clip: text; background-clip: text; color: transparent }
+    .btn-grad { background: linear-gradient(135deg, #6d49e8, #9a63ff); box-shadow: 0 10px 22px -10px rgba(109,73,232,.75); transition: transform .2s, box-shadow .2s }
+    .btn-grad:hover { transform: translateY(-1px); box-shadow: 0 14px 26px -10px rgba(109,73,232,.85) }
+    .btn-sale { background: linear-gradient(135deg, #ff7a59, #ff5c8a) }
+    .chip { display: inline-flex; align-items: center; gap: .3rem; padding: .3rem 1rem; border-radius: 999px; background: rgba(255,255,255,.74); border: 1px solid #e1d7ff; color: #4b3f8a; white-space: nowrap; transition: .2s }
+    .chip:hover { background: #fff; border-color: #c4b2ff }
+    .chip-on, .chip-on:hover { background: linear-gradient(135deg, #6d49e8, #9a63ff); color: #fff; border-color: transparent; box-shadow: 0 8px 18px -8px rgba(109,73,232,.7) }
+    .pcard { background: rgba(255,255,255,.8); border: 1px solid #fff; border-radius: 1.6rem; box-shadow: 0 12px 32px -18px rgba(109,73,232,.4); transition: transform .25s, box-shadow .25s }
+    .pcard:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -16px rgba(109,73,232,.5) }
+    .no-scrollbar { scrollbar-width: none } .no-scrollbar::-webkit-scrollbar { display: none }
+    #foot > div:first-child { border-radius: 2rem 2rem 0 0 }
+    /* bottom navigation (phones) */
+    .bn { display: flex; flex-direction: column; align-items: center; gap: 1px; min-width: 64px; font-size: .72rem; color: #7d7aa0; position: relative; transition: color .2s }
+    .bn svg { width: 23px; height: 23px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round }
+    .bn-ic { display: grid; place-items: center; width: 50px; height: 30px; border-radius: 999px; transition: background .25s }
+    .bn.on { color: #6d49e8; font-weight: 700 }
+    .bn.on .bn-ic { background: linear-gradient(135deg, #e6dcff, #ffe3d3) }
+    .bn-badge { position: absolute; top: -3px; inset-inline-end: 8px; min-width: 18px; height: 18px; padding: 0 5px; border-radius: 999px; background: #ff6b81; color: #fff; font-size: .68rem; line-height: 18px; text-align: center; font-weight: 700 }
+    /* blog article text */
+    .post { line-height: 2; font-size: 1.02rem } .post h2 { font-size: 1.45rem; font-weight: 800; margin: 1.8rem 0 .6rem; color: #4b3f8a } .post h3 { font-size: 1.2rem; font-weight: 700; margin: 1.4rem 0 .5rem }
+    .post p { margin: .8rem 0 } .post ul, .post ol { margin: .8rem 0; padding-inline-start: 1.6rem } .post ul { list-style: disc } .post ol { list-style: decimal }
+    .post img { max-width: 100%; border-radius: 1.25rem; margin: 1.2rem auto; display: block } .post a { color: #6d49e8; text-decoration: underline }
+    .post blockquote { border-inline-start: 4px solid #c4b2ff; background: #f4efff; padding: .6rem 1rem; border-radius: .75rem; margin: 1rem 0; color: #4b3f8a }
+    /* gentle motion */
+    @keyframes floaty { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-14px) } }
+    .blob { position: absolute; border-radius: 50%; filter: blur(32px); opacity: .6; animation: floaty 9s ease-in-out infinite; pointer-events: none }
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease } .reveal.in { opacity: 1; transform: none }
+    @keyframes bump { 0% { transform: scale(1) } 40% { transform: scale(1.4) } 100% { transform: scale(1) } } .bump { animation: bump .4s }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none } .blob { animation: none } }
+    @media (max-width: 767px) { body { padding-bottom: 96px } }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important } }
+  </style>
+</head>
+<body class="font-sans leading-7 min-h-screen flex flex-col">
+  <!--SEO_BODY_TOP-->
+  <div id="ann" class="text-white"></div>
+  <header class="sticky top-0 z-30 glass !border-x-0 !border-t-0 !shadow-none" style="padding-top:env(safe-area-inset-top,0px)">
+    <div class="max-w-6xl mx-auto px-4 py-2 flex flex-wrap items-center gap-x-3 gap-y-2">
+      <a href="/" class="logo text-2xl font-extrabold">خانوم زیبا</a>
+      <form id="sf" class="flex flex-1 min-w-[180px] order-last w-full md:order-none md:w-auto">
+        <input id="sq" class="flex-1 min-w-0 rounded-s-full ps-5 pe-3 py-2 bg-white/80 border border-lav-200 outline-none focus:ring-2 focus:ring-lav-300" aria-label="search">
+        <button class="btn-grad text-white px-5 rounded-e-full" aria-label="search">🔍</button>
+      </form>
+      <button id="lang" class="chip ms-auto md:ms-0"></button>
+      <a id="userLink" href="/login" class="chip hidden md:inline-flex"></a>
+      <a href="/bag" class="chip hidden md:inline-flex">🛍 <span id="cnt" class="rounded-full px-2 text-xs text-white" style="background:#ff6b81">0</span></a>
+    </div>
+    <nav id="menu" class="hidden md:flex max-w-6xl mx-auto px-4 gap-6 relative"></nav>
+  </header>
+  <main id="app" class="w-full max-w-6xl mx-auto px-4 py-6 flex-1"><!--SEO_BODY--></main>
+  <footer id="foot" class="mt-10"></footer>
+
+  <!-- bottom navigation: only on phones -->
+  <nav id="bnav" class="md:hidden fixed z-40 inset-x-3 glass-strong rounded-[1.75rem] flex justify-around px-1 py-2" style="bottom:calc(10px + env(safe-area-inset-bottom,0px))" aria-label="Main">
+    <a href="/" data-bn="home" class="bn"><span class="bn-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5a1 1 0 0 0 1 1H10v-6h4v6h3.5a1 1 0 0 0 1-1V10"/></svg></span><span class="bn-t"></span></a>
+    <a href="/categories" data-bn="cats" class="bn"><span class="bn-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.8"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.8"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.8"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.8"/></svg></span><span class="bn-t"></span></a>
+    <a href="/bag" data-bn="bag" class="bn"><span class="bn-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 3.5h2.6l2.1 11a1.2 1.2 0 0 0 1.2 1h8.9a1.2 1.2 0 0 0 1.2-.9l1.5-6.6H6.1"/><circle cx="9.5" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/></svg></span><span class="bn-badge" id="cntb" style="display:none">0</span><span class="bn-t"></span></a>
+    <a href="/profile" data-bn="profile" class="bn"><span class="bn-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c0-3.8 3.4-6.3 7.5-6.3s7.5 2.5 7.5 6.3"/></svg></span><span class="bn-t"></span></a>
+  </nav>
+  <div id="toast" class="fixed bottom-28 md:bottom-5 left-1/2 -translate-x-1/2 bg-slate-800 text-white px-5 py-2 rounded-full opacity-0 transition pointer-events-none z-50"></div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

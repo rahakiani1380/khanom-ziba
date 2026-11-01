@@ -1,0 +1,21 @@
+# Render.com "Blueprint": deploys the whole site (Node.js server) for free from your GitHub repo.
+services:
+  - type: web
+    name: khanom-ziba
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ADMIN_USER
+        value: admin
+      - key: ADMIN_PASS        # a strong random password is created for you; see it in the Render dashboard > Environment
+        generateValue: true
+      - key: APP_SECRET        # key that encrypts customer data in the database (keep it, do not change it later)
+        generateValue: true
+      - key: TRUST_PROXY       # Render sits in front of the site: use the real visitor address for rate limits
+        value: "1"
+      - key: SHOW_CODE         # DEMO ONLY: shows the SMS code on screen. Delete this line when a real SMS service is connected.
+        value: "1"

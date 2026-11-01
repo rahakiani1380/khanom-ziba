@@ -1,0 +1,10 @@
+[
+{"id":1,"c":"dev-thermo","p":450000,"o":520000,"e":"🌡️","bg":"#dce8f5","r":4.6,"n":312,"en":"Digital Thermometer","fa":"تب‌سنج دیجیتال","de":"Fast 10-second reading, fever alarm and memory. Safe for all ages.","df":"اندازه‌گیری سریع در ۱۰ ثانیه، هشدار تب و حافظه. مناسب برای همه سنین."},
+{"id":2,"c":"dev-bp","p":2350000,"o":2700000,"e":"🩺","bg":"#e3f1f0","r":4.8,"n":540,"en":"Blood Pressure Monitor","fa":"فشارسنج دیجیتال بازویی","de":"Upper-arm monitor with large screen and irregular heartbeat detection.","df":"فشارسنج بازویی با صفحه بزرگ و تشخیص ضربان نامنظم."},
+{"id":3,"c":"dev-oxi","p":1250000,"e":"🫀","bg":"#f6dcdc","r":4.4,"n":208,"en":"Pulse Oximeter","fa":"پالس اکسی‌متر انگشتی","de":"Shows oxygen saturation and pulse rate in seconds.","df":"نمایش اشباع اکسیژن و ضربان قلب در چند ثانیه."},
+{"id":4,"c":"vit-d","p":380000,"e":"☀️","bg":"#f8ecc4","r":4.7,"n":421,"en":"Vitamin D3 1000 IU","fa":"ویتامین D3 هزار واحدی","de":"60 softgels. Supports bones, muscles and normal immune function.","df":"۶۰ عدد سافت‌ژل. حمایت از استخوان، عضله و ایمنی بدن."},
+{"id":5,"c":"vit-omega","p":520000,"o":590000,"e":"🐟","bg":"#d6e8f2","r":4.3,"n":255,"en":"Omega-3 Fish Oil","fa":"امگا ۳ روغن ماهی","de":"90 capsules of high-purity fish oil with EPA and DHA.","df":"۹۰ کپسول روغن ماهی با خلوص بالا، حاوی EPA و DHA."},
+{"id":6,"c":"aid","p":690000,"e":"🧰","bg":"#f6d9d9","r":4.9,"n":389,"en":"Family First Aid Kit","fa":"کیف کمک‌های اولیه خانواده","de":"62 pieces: bandages, gauze, tape, scissors, gloves and a guide.","df":"۶۲ قلم شامل بانداژ، گاز، چسب، قیچی، دستکش و راهنما."},
+{"id":7,"c":"hyg","p":240000,"e":"😷","bg":"#e1ecdd","r":4.2,"n":603,"en":"Medical Face Masks (50)","fa":"ماسک طبی ۵۰ عددی","de":"3-layer masks with soft ear loops and a nose clip.","df":"ماسک سه‌لایه با گوشی نرم و گیره بینی."},
+{"id":8,"c":"ortho","p":980000,"o":1100000,"e":"🦵","bg":"#e9e2f3","r":4.4,"n":142,"en":"Knee Support Brace","fa":"زانوبند الاستیک","de":"Breathable elastic brace with side stabilizers.","df":"زانوبند الاستیک و قابل‌تنفس با تثبیت‌کننده کناری."}
+]
